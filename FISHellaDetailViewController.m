@@ -10,7 +10,8 @@
 
 @interface FISHellaDetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *numberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bigNumber;
+
 
 @end
 
@@ -19,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.numberLabel.text = [NSString stringWithFormat:@"%@", self.numberLabel];
+    self.bigNumber.text = [NSString stringWithFormat:@"%@", self.bigNumber];
     
     // Do any additional setup after loading the view.
 }

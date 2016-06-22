@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Hella Master Table Table View Controller-->
+        <!--Hella Master Table View Controller-->
         <scene sceneID="B31-mM-J1H">
             <objects>
-                <tableViewController id="QOC-iT-WRp" customClass="FISHellaMasterTableTableViewController" sceneMemberID="viewController">
+                <tableViewController id="QOC-iT-WRp" customClass="FISHellaMasterTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="KjB-YL-xmC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,6 +41,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="eir-e3-L80"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Table"/>
+                    </userDefinedRuntimeAttributes>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16d-EV-DBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,7 +63,8 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9He-gR-kdr">
                                 <rect key="frame" x="73" y="114" width="211" height="290"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <accessibility key="accessibilityConfiguration" label="bigNumber"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="71"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -69,7 +73,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="m9u-2p-DKh"/>
                     <connections>
-                        <outlet property="numberLabel" destination="9He-gR-kdr" id="1QI-Xc-UI4"/>
+                        <outlet property="bigNumber" destination="9He-gR-kdr" id="qJO-IB-G7X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUG-Gr-XTq" userLabel="First Responder" sceneMemberID="firstResponder"/>

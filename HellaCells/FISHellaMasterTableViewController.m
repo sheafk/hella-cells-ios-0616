@@ -41,7 +41,7 @@
 //This is where the cell is formatted
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"simpleCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"bigNumber"];
     
     cell.textLabel.text = [NSString stringWithFormat:@"%lu",indexPath.row+1];
     

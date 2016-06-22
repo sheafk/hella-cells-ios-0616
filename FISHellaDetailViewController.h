@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FISHellaDetailViewController : UIViewController
+@property (nonatomic) NSUInteger *number;
 
 @end
